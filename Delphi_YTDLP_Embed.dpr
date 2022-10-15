@@ -1,4 +1,4 @@
-program Delphi_YTDdl_Embed;
+program Delphi_YTDLP_Embed;
 
 uses
   System.StartUpCopy,

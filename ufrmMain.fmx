@@ -50,6 +50,7 @@ object frmMain: TfrmMain
         Size.PlatformDefault = False
         TabOrder = 0
         Text = 'Download'
+        OnClick = btnDownloadClick
       end
     end
   end
@@ -110,6 +111,8 @@ object frmMain: TfrmMain
     InputToOutput = False
     MaxTimeAfterBeginning = 0
     MaxTimeAfterLastOutput = 0
+    OnNewLine = dscmndYTDLNewLine
+    OnTerminated = dscmndYTDLTerminated
     Left = 384
     Top = 240
   end
