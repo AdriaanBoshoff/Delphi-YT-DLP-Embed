@@ -1,7 +1,7 @@
 object frmMain: TfrmMain
   Left = 0
   Top = 0
-  Caption = 'Delphi YTD-DL Embed'
+  Caption = 'Delphi YT-DLP Embed'
   ClientHeight = 500
   ClientWidth = 800
   FormFactor.Width = 320
