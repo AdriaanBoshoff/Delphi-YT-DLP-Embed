@@ -8,4 +8,109 @@ object frmMain: TfrmMain
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
+  object tlbMain: TToolBar
+    Padding.Left = 5.000000000000000000
+    Padding.Top = 5.000000000000000000
+    Padding.Right = 5.000000000000000000
+    Padding.Bottom = 5.000000000000000000
+    Size.Width = 800.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object lblYTURLHeader: TLabel
+      Align = Left
+      AutoSize = True
+      StyledSettings = [Family, FontColor]
+      Position.X = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 29.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+      TextSettings.WordWrap = False
+      Text = 'URL:'
+      TabOrder = 0
+    end
+    object edtURL: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 1
+      TextSettings.HorzAlign = Center
+      Margins.Left = 5.000000000000000000
+      Size.Width = 756.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Enter Media URL such as YouTube or Reddit'
+      object btnDownload: TEditButton
+        CanFocus = False
+        Cursor = crArrow
+        Size.Width = 80.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Download'
+      end
+    end
+  end
+  object statMain: TStatusBar
+    Position.Y = 478.000000000000000000
+    ShowSizeGrip = True
+    Size.Width = 800.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+  end
+  object pbProgress: TProgressBar
+    Align = Top
+    Orientation = Horizontal
+    Position.Y = 40.000000000000000000
+    Size.Width = 800.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    object lblProgress: TLabel
+      Align = Contents
+      Size.Width = 800.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      Text = 'PROGRESS'
+      TabOrder = 66
+    end
+  end
+  object lblLogHeader: TLabel
+    Align = Top
+    AutoSize = True
+    StyledSettings = [Family, FontColor]
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Position.X = 5.000000000000000000
+    Position.Y = 75.000000000000000000
+    Size.Width = 790.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    Text = 'Log:'
+    TabOrder = 3
+  end
+  object mmoLog: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Client
+    Size.Width = 800.000000000000000000
+    Size.Height = 384.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Viewport.Width = 796.000000000000000000
+    Viewport.Height = 380.000000000000000000
+  end
+  object dscmndYTDL: TDosCommand
+    InputToOutput = False
+    MaxTimeAfterBeginning = 0
+    MaxTimeAfterLastOutput = 0
+    Left = 384
+    Top = 240
+  end
 end
